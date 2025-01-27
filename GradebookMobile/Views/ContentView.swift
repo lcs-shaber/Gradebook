@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  Gradebook
+//  GradebookMobile
 //
 //  Created by Russell Gordon on 2025-01-27.
 //

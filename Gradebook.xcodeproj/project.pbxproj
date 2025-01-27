@@ -6,20 +6,40 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		813DB3022D47DF8300496B35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813DB2FB2D47DF8300496B35 /* Preview Assets.xcassets */; };
+		813DB3032D47DF8300496B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813DB2FD2D47DF8300496B35 /* Assets.xcassets */; };
+		813DB3042D47DF8300496B35 /* AssignmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB2FE2D47DF8300496B35 /* AssignmentsView.swift */; };
+		813DB3052D47DF8300496B35 /* GradebookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB3002D47DF8300496B35 /* GradebookApp.swift */; };
+		813DB3252D47E0BA00496B35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB3222D47E0BA00496B35 /* ContentView.swift */; };
+		813DB3262D47E0BA00496B35 /* GradebookMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB3232D47E0BA00496B35 /* GradebookMobileApp.swift */; };
+		813DB3272D47E0BA00496B35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813DB31F2D47E0BA00496B35 /* Preview Assets.xcassets */; };
+		813DB3282D47E0BA00496B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813DB3212D47E0BA00496B35 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		813DB2E92D47DF7900496B35 /* Gradebook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gradebook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813DB2FB2D47DF8300496B35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		813DB2FD2D47DF8300496B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		813DB2FE2D47DF8300496B35 /* AssignmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignmentsView.swift; sourceTree = "<group>"; };
+		813DB2FF2D47DF8300496B35 /* Gradebook.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Gradebook.entitlements; sourceTree = "<group>"; };
+		813DB3002D47DF8300496B35 /* GradebookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradebookApp.swift; sourceTree = "<group>"; };
+		813DB3112D47E0B300496B35 /* GradebookMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradebookMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		813DB31F2D47E0BA00496B35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		813DB3212D47E0BA00496B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		813DB3222D47E0BA00496B35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		813DB3232D47E0BA00496B35 /* GradebookMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradebookMobileApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		813DB2EB2D47DF7900496B35 /* Gradebook */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Gradebook;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		813DB2E62D47DF7900496B35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813DB30E2D47E0B300496B35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,7 +52,9 @@
 		813DB2E02D47DF7900496B35 = {
 			isa = PBXGroup;
 			children = (
-				813DB2EB2D47DF7900496B35 /* Gradebook */,
+				813DB3062D47DFC100496B35 /* Shared */,
+				813DB3012D47DF8300496B35 /* Gradebook */,
+				813DB3242D47E0BA00496B35 /* GradebookMobile */,
 				813DB2EA2D47DF7900496B35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,8 +63,127 @@
 			isa = PBXGroup;
 			children = (
 				813DB2E92D47DF7900496B35 /* Gradebook.app */,
+				813DB3112D47E0B300496B35 /* GradebookMobile.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		813DB2FC2D47DF8300496B35 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				813DB2FB2D47DF8300496B35 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		813DB3012D47DF8300496B35 /* Gradebook */ = {
+			isa = PBXGroup;
+			children = (
+				813DB3002D47DF8300496B35 /* GradebookApp.swift */,
+				813DB30C2D47E00100496B35 /* Model */,
+				813DB30B2D47DFF300496B35 /* ViewModels */,
+				813DB30A2D47DFE800496B35 /* Views */,
+				813DB2FC2D47DF8300496B35 /* Preview Content */,
+				813DB2FD2D47DF8300496B35 /* Assets.xcassets */,
+				813DB2FF2D47DF8300496B35 /* Gradebook.entitlements */,
+			);
+			path = Gradebook;
+			sourceTree = "<group>";
+		};
+		813DB3062D47DFC100496B35 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				813DB3072D47DFC600496B35 /* Model */,
+				813DB3092D47DFCE00496B35 /* ViewModels */,
+				813DB3082D47DFCA00496B35 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		813DB3072D47DFC600496B35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		813DB3082D47DFCA00496B35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		813DB3092D47DFCE00496B35 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		813DB30A2D47DFE800496B35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				813DB2FE2D47DF8300496B35 /* AssignmentsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		813DB30B2D47DFF300496B35 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		813DB30C2D47E00100496B35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		813DB3202D47E0BA00496B35 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				813DB31F2D47E0BA00496B35 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		813DB3242D47E0BA00496B35 /* GradebookMobile */ = {
+			isa = PBXGroup;
+			children = (
+				813DB3232D47E0BA00496B35 /* GradebookMobileApp.swift */,
+				813DB3292D47E0BD00496B35 /* Model */,
+				813DB32A2D47E0C300496B35 /* ViewModels */,
+				813DB32B2D47E0CE00496B35 /* Views */,
+				813DB3202D47E0BA00496B35 /* Preview Content */,
+				813DB3212D47E0BA00496B35 /* Assets.xcassets */,
+			);
+			path = GradebookMobile;
+			sourceTree = "<group>";
+		};
+		813DB3292D47E0BD00496B35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		813DB32A2D47E0C300496B35 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		813DB32B2D47E0CE00496B35 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				813DB3222D47E0BA00496B35 /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,14 +201,30 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				813DB2EB2D47DF7900496B35 /* Gradebook */,
-			);
 			name = Gradebook;
 			packageProductDependencies = (
 			);
 			productName = Gradebook;
 			productReference = 813DB2E92D47DF7900496B35 /* Gradebook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		813DB3102D47E0B300496B35 /* GradebookMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 813DB31C2D47E0B400496B35 /* Build configuration list for PBXNativeTarget "GradebookMobile" */;
+			buildPhases = (
+				813DB30D2D47E0B300496B35 /* Sources */,
+				813DB30E2D47E0B300496B35 /* Frameworks */,
+				813DB30F2D47E0B300496B35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GradebookMobile;
+			packageProductDependencies = (
+			);
+			productName = GradebookMobile;
+			productReference = 813DB3112D47E0B300496B35 /* GradebookMobile.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -81,6 +238,9 @@
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
 					813DB2E82D47DF7900496B35 = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					813DB3102D47E0B300496B35 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 				};
@@ -100,6 +260,7 @@
 			projectRoot = "";
 			targets = (
 				813DB2E82D47DF7900496B35 /* Gradebook */,
+				813DB3102D47E0B300496B35 /* GradebookMobile */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +270,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813DB3022D47DF8300496B35 /* Preview Assets.xcassets in Resources */,
+				813DB3032D47DF8300496B35 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813DB30F2D47E0B300496B35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813DB3272D47E0BA00496B35 /* Preview Assets.xcassets in Resources */,
+				813DB3282D47E0BA00496B35 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +291,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813DB3042D47DF8300496B35 /* AssignmentsView.swift in Sources */,
+				813DB3052D47DF8300496B35 /* GradebookApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		813DB30D2D47E0B300496B35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				813DB3252D47E0BA00496B35 /* ContentView.swift in Sources */,
+				813DB3262D47E0BA00496B35 /* GradebookMobileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +480,69 @@
 			};
 			name = Release;
 		};
+		813DB31D2D47E0B400496B35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GradebookMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UG443984D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.GradebookMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		813DB31E2D47E0B400496B35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GradebookMobile/Preview Content\"";
+				DEVELOPMENT_TEAM = 4UG443984D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.russellgordon.GradebookMobile;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -314,6 +560,15 @@
 			buildConfigurations = (
 				813DB2F92D47DF7A00496B35 /* Debug */,
 				813DB2FA2D47DF7A00496B35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		813DB31C2D47E0B400496B35 /* Build configuration list for PBXNativeTarget "GradebookMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				813DB31D2D47E0B400496B35 /* Debug */,
+				813DB31E2D47E0B400496B35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
