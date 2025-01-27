@@ -11,7 +11,7 @@
 		813DB3032D47DF8300496B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813DB2FD2D47DF8300496B35 /* Assets.xcassets */; };
 		813DB3042D47DF8300496B35 /* AssignmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB2FE2D47DF8300496B35 /* AssignmentsView.swift */; };
 		813DB3052D47DF8300496B35 /* GradebookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB3002D47DF8300496B35 /* GradebookApp.swift */; };
-		813DB3252D47E0BA00496B35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB3222D47E0BA00496B35 /* ContentView.swift */; };
+		813DB3252D47E0BA00496B35 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB3222D47E0BA00496B35 /* LandingView.swift */; };
 		813DB3262D47E0BA00496B35 /* GradebookMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813DB3232D47E0BA00496B35 /* GradebookMobileApp.swift */; };
 		813DB3272D47E0BA00496B35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813DB31F2D47E0BA00496B35 /* Preview Assets.xcassets */; };
 		813DB3282D47E0BA00496B35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 813DB3212D47E0BA00496B35 /* Assets.xcassets */; };
@@ -27,7 +27,7 @@
 		813DB3112D47E0B300496B35 /* GradebookMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GradebookMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		813DB31F2D47E0BA00496B35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		813DB3212D47E0BA00496B35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		813DB3222D47E0BA00496B35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		813DB3222D47E0BA00496B35 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		813DB3232D47E0BA00496B35 /* GradebookMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradebookMobileApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,7 +181,7 @@
 		813DB32B2D47E0CE00496B35 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				813DB3222D47E0BA00496B35 /* ContentView.swift */,
+				813DB3222D47E0BA00496B35 /* LandingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -300,7 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				813DB3252D47E0BA00496B35 /* ContentView.swift in Sources */,
+				813DB3252D47E0BA00496B35 /* LandingView.swift in Sources */,
 				813DB3262D47E0BA00496B35 /* GradebookMobileApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
