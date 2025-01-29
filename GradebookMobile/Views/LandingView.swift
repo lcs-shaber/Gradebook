@@ -8,17 +8,33 @@
 import SwiftUI
 
 struct LandingView: View {
+    
+    // MARK: Stored properties
+    
+    // Access the view model
+    let viewModel: LandingViewModel
+    
+    // MARK: Computed properties
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                if let count = viewModel.studentCount {
+                    Text("There are \(count) students in the database.")
+                } else {
+                    Text("Could not find count of students in database.")
+                }
+            }
+            .navigationTitle("Gradebook")
         }
         .padding()
     }
+    
 }
 
 #Preview {
-    LandingView()
+    
+    @Previewable @State var viewModel = LandingViewModel(using: DatabaseConnection())
+    
+    LandingView(viewModel: viewModel)
+    
 }
