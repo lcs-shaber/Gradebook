@@ -16,8 +16,11 @@ class LandingViewModel {
     // Connection to the database
     private let db: DatabaseConnection
     
-    // List of students
+    // Count of students
     var studentCount: Int?
+    
+    //List of students (empty array)
+    var students: [Student] = []
     
     // MARK: Initializer(s)
     init(using db: DatabaseConnection) {
@@ -39,10 +42,17 @@ class LandingViewModel {
         Task {
             self.studentCount = await self.getCountOfStudents()
         }
+        
+        //Get the list of students
+        
+        Task {
+            await self.getStudents()
+        }
+        
         Logger.database.info("LandingViewModel initialized.")
     }
     
-    // MARK: function(s)
+    // MARK: Function(s)
     private func getCountOfStudents() async -> Int? {
         
         Logger.database.info("At start of getCountOfStudents function...")
@@ -65,5 +75,33 @@ class LandingViewModel {
             
         }
 
+    }
+    
+    
+    private func getStudents() async {
+       
+        
+        Logger.database.info("About to get list of Students.")
+        
+        
+        do {
+            //Get the list of students
+            
+            let results: [Student] = try await db.supabase
+                .from("student")
+                .select()
+                .execute()
+                .value
+           
+            
+            Logger.database.info("Successfully retrieved list of students.")
+            
+            self.students = results
+            
+        } catch {
+            
+            Logger.database.error("Could not retrieve list of students.")
+            
+        }
     }
 }
